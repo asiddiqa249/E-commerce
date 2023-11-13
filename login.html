@@ -11,18 +11,15 @@
         background-size: cover;
         color: white;
       }
-      .btnlogin {
-        position: relative;
-        top: 150px;
-        text-align: center;
-      }
-      .btnlogin button {
+
+      .btnlogin{
         width: 100px;
         padding: 0.5%;
         background-color:black;
         color: white;
         font-size: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
+        margin-bottom: 3%;
       }
       .container {
         position: relative;
@@ -30,10 +27,9 @@
         left: 40.5%;
         border: 2px solid white;
         width: 300px;
-        
         padding: 2%;
         box-shadow: 0px 0px 3px 3px white;
-        background-color: white;
+        background-image:linear-gradient(to right, rgb(249, 220, 183) , rgb(233, 95, 118)) ;
         border-radius: 5px;
       }
       .lbel {
@@ -53,10 +49,8 @@
     </style>
   </head>
   <body>
-    <div class="btnlogin">
-      <button>Login</button>
-    </div>
     <div class="container">
+        <center><button class="btnlogin">Login</button></center>
       <form action="">
         <input type="text" placeholder="Username..." class="lbel" id="user"/><br />
         <input type="text" placeholder="Password..." class="lbel" id="pass"/><br />

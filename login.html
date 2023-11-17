@@ -38,13 +38,18 @@
       #login{
         background-color: black;
         color: white;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 3%;
-        width: 60px;
+        width: 100%;
         font-size: 16px;
       }
       input{
-        font-size: 18px;
+        width: 100%;
+        font-size: large;
+      }
+      label{
+        font-size: larger;
+        color: black;
       }
     </style>
   </head>
@@ -52,8 +57,10 @@
     <div class="container">
         <center><button class="btnlogin">Login</button></center>
       <form action="">
-        <input type="text" placeholder="Username..." class="lbel" id="user"/><br />
-        <input type="text" placeholder="Password..." class="lbel" id="pass"/><br />
+        <label for="username" id="userlbel">Username : </label><br><br>
+        <input type="text" placeholder="Username..." class="lbel" id="user"/><br /><br>
+        <label for="Password" id="plabel">Password : </label><br><br>
+        <input type="password" placeholder="Password..." class="lbel" id="pass"/><br /><br>
         <button id="login">Login</button>
       </form>
       <script>
